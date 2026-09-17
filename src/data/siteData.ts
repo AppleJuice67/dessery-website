@@ -19,10 +19,10 @@ export const SLIDES: HeroSlide[] = [
 ]
 
 export const BEST_SELLERS: BestSellerItem[] = [
-  { name: "Chocolate Sprinkle Pop", desc: "Rich dark chocolate, rainbow sprinkles", price: "₱45", emoji: "🍫" },
-  { name: "Red Velvet Pop", desc: "Velvety red cake, cream cheese drizzle", price: "₱50", emoji: "❤️" },
-  { name: "Oreo Crumble Pop", desc: "Cookies & cream, oreo crumble topping", price: "₱48", emoji: "⚫" },
-  { name: "Cookie Butter Pop", desc: "Biscoff-infused cake, caramel glaze", price: "₱52", emoji: "🍪" },
+  { name: "Choco Confetti Pop", desc: "Chocolate-coated cake pop with marshmallow center", price: "₱39", emoji: "🍫" },
+  { name: "Choco Snow Pop", desc: "Chocolate-coated cake pop with white chocolate drizzle", price: "₱39", emoji: "❤️" },
+  { name: "Choco Delight", desc: "Moist chocolate cake, frosting and toppings", price: "₱59", emoji: "⚫" },
+  { name: "Cream & Crunch", desc: "Cookie base, white chocolate sauce and oreo", price: "₱89", emoji: "🍪" },
 ]
 
 export const MENU_CATEGORIES = ["All", "Cake Pops", "Push Pop Cakes", "Sweet Cups"] as const
@@ -76,14 +76,14 @@ export const SERVICES: ServiceItem[] = [
 ]
 
 export const CONTACT_INFO: ContactInfoItem[] = [
-  { icon: "📞", label: "Phone / WhatsApp", value: "+63 XXX XXX XXXX", sub: "Mon–Sat, 9AM–6PM" },
-  { icon: "📧", label: "Email", value: "hello@dessery.ph", sub: "We reply within 24 hours" },
-  { icon: "📍", label: "Address", value: "Your Business Address Here", sub: "City, Province, Philippines" },
+  { icon: "📞", label: "Phone / WhatsApp", value: "+63 9544092577", sub: "Mon–Sat, 9AM–6PM" },
+  { icon: "📧", label: "Email", value: "[EMAIL_ADDRESS]", sub: "We reply within 24 hours" },
+  { icon: "📍", label: "Address", value: "049 Matagbak II", sub: "Alfonso, Cavite, Philippines" },
   { icon: "⏰", label: "Hours", value: "Open Daily 9AM – 6PM", sub: "Closed on major holidays" },
 ]
 
 export const SOCIAL_LINKS: SocialLinkItem[] = [
-  { label: "Instagram", handle: "@dessery.official", bg: "bg-gradient-to-br from-purple-400 to-pink-500" },
-  { label: "TikTok", handle: "@dessery.official", bg: "bg-black" },
-  { label: "Facebook", handle: "Dessery PH", bg: "bg-blue-600" },
+  { label: "Instagram", handle: "@dessery.official", bg: "bg-gradient-to-br from-purple-400 to-pink-500", href: "https://www.instagram.com/dessery.official/" },
+  { label: "TikTok", handle: "@dessery.official", bg: "bg-black", href: "https://www.tiktok.com/@dessery.official" },
+  { label: "Facebook", handle: "Dessery PH", bg: "bg-blue-600", href: "https://www.facebook.com/profile.php?id=61592644987189" },
 ]

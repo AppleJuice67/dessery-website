@@ -58,10 +58,12 @@ export default function ContactSection() {
             <div className="p-4 bg-white rounded-2xl border border-pink-100">
               <p className="text-xs font-bold text-[#a0738a] uppercase tracking-wider mb-3">Follow Us</p>
               <div className="flex gap-3">
-                {SOCIAL_LINKS.map(({ label, handle, bg }) => (
+                {SOCIAL_LINKS.map(({ label, handle, bg, href }) => (
                   <a
                     key={label}
-                    href="#"
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className={`flex-1 ${bg} text-white rounded-xl p-2.5 text-center hover:opacity-90 transition-opacity`}
                   >
                     <p className="text-[10px] font-bold">{label}</p>

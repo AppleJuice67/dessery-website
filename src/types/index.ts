@@ -61,6 +61,7 @@ export interface SocialLinkItem {
   label: string
   handle: string
   bg: string
+  href: string
 }
 
 export interface ContactFormData {
