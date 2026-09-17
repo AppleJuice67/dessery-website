@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Dancing Script', cursive;
+  --font-sans: 'Nunito', sans-serif;
+
+  --color-pink-50: #fff0f6;
+  --color-pink-100: #ffe4f0;
+  --color-pink-200: #ffc9e0;
+  --color-pink-300: #ff9fc6;
+  --color-pink-400: #ff5fa6;
+  --color-pink-500: #f72585;
+  --color-pink-600: #e0186e;
+  --color-pink-700: #b8105a;
+  --color-cream: #fff8f0;
+  --color-yellow-soft: #f9e4b7;
+  --color-brown-warm: #3d1810;
+  --color-rose-muted: #a0738a;
+}
+
+:root {
+  --background: #fff8f0;
+  --foreground: #3d1810;
+  --card: #ffffff;
+  --card-foreground: #3d1810;
+  --primary: #f72585;
+  --primary-foreground: #ffffff;
+  --secondary: #f9e4b7;
+  --secondary-foreground: #3d1810;
+  --muted: #fdf0f5;
+  --muted-foreground: #a0738a;
+  --accent: #ffb3d1;
+  --accent-foreground: #3d1810;
+  --border: #f0d9e2;
+  --ring: #f72585;
+  --radius: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Hide scrollbars by default */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffc9e0;
+  border-radius: 3px;
+}
+
+/* Animated underline hover */
+.nav-link-hover {
+  position: relative;
+}
+.nav-link-hover::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary);
+  border-radius: 1px;
+  transition: width 0.25s ease;
+}
+.nav-link-hover:hover::after {
+  width: 100%;
+}
+
+/* Sprinkle dots background pattern */
+.sprinkle-bg {
+  background-image:
+    radial-gradient(circle, #f72585 1px, transparent 1px),
+    radial-gradient(circle, #ffb3d1 1px, transparent 1px),
+    radial-gradient(circle, #f9e4b7 1px, transparent 1px);
+  background-size: 48px 48px, 72px 72px, 36px 36px;
+  background-position: 0 0, 24px 24px, 12px 36px;
+}
+
+/* Soft glow on pink buttons */
+.btn-primary-glow:hover {
+  box-shadow: 0 8px 24px rgba(247, 37, 133, 0.35);
+}
+
+/* Card lift effect */
+.card-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(247, 37, 133, 0.15);
+}
+
+/* Floating animation for hero image */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+.float-anim {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Heartbeat animation */
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+.heart-pulse {
+  animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+/* Carousel slide zoom-in — applied via inline style in HeroCarousel */
+@keyframes slideZoomIn {
+  from {
+    opacity: 0;
+    transform: scale(1.08);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.04);
+  }
+}
+
+.carousel-slide-active {
+  animation: slideZoomIn 700ms cubic-bezier(0.34, 1, 0.64, 1) forwards;
+}
+
+/* Shimmer for placeholder boxes */
+@keyframes shimmer {
+  0% { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+.placeholder-shimmer {
+  background: linear-gradient(90deg, #ffe4f0 25%, #fff0f6 50%, #ffe4f0 75%);
+  background-size: 800px 100%;
+  animation: shimmer 2s infinite linear;
+}
