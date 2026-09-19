@@ -2,12 +2,12 @@ import type { GalleryPhoto } from "../types"
 
 export const GALLERY_PHOTOS: GalleryPhoto[] = [
   {
-    src: "/images/gallery/Cake pops.png",
+    src: "/images/gallery/cake-pops.png",
     alt: "Handcrafted Cake Pops Collection",
     span: "col-span-1 md:col-span-2 row-span-2",
   },
   {
-    src: "/images/gallery/Push pop cakes.png",
+    src: "/images/gallery/push-pop-cakes.png",
     alt: "Push Pop Cakes Display",
     span: "col-span-1 row-span-1",
   },

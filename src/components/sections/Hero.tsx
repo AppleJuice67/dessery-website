@@ -67,8 +67,8 @@ export default function Hero() {
             {/* Stats */}
             <div className="flex gap-6 sm:gap-10 justify-center lg:justify-start pt-6 border-t border-pink-100">
               {[
-                { val: "500+", label: "Happy Customers" },
-                { val: "20+", label: "Flavors" },
+                { val: "150+", label: "Happy Customers" },
+                { val: "4+", label: "Flavors" },
                 { val: "100%", label: "Handmade" },
               ].map(({ val, label }) => (
                 <div key={label}>
