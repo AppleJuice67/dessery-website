@@ -25,6 +25,7 @@ export interface BestSellerItem {
   desc: string
   price: string
   emoji: string
+  image?: string
 }
 
 export interface MenuItem {
@@ -32,6 +33,7 @@ export interface MenuItem {
   desc: string
   price: string
   category: string
+  image?: string
 }
 
 export interface GalleryPhoto {

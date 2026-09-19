@@ -23,11 +23,19 @@ export default function FeaturedSection() {
               key={item.name}
               className="card-lift bg-[#fff8f0] rounded-2xl overflow-hidden border border-pink-100"
             >
-              <PhotoSlot
-                className="w-full h-40 rounded-none border-0 rounded-t-2xl"
-                label={`${item.emoji} ${item.name} photo`}
-                emoji={item.emoji}
-              />
+              {item.image ? (
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  className="w-full h-40 object-cover rounded-t-2xl"
+                />
+              ) : (
+                <PhotoSlot
+                  className="w-full h-40 rounded-none border-0 rounded-t-2xl"
+                  label={`${item.emoji} ${item.name} photo`}
+                  emoji={item.emoji}
+                />
+              )}
               <div className="p-4">
                 <p className="font-black text-[#3d1810] text-sm leading-tight">{item.name}</p>
                 <p className="text-xs text-[#a0738a] mt-1 leading-snug">{item.desc}</p>

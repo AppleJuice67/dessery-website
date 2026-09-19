@@ -19,24 +19,24 @@ export const SLIDES: HeroSlide[] = [
 ]
 
 export const BEST_SELLERS: BestSellerItem[] = [
-  { name: "Choco Confetti Pop", desc: "Chocolate-coated cake pop with marshmallow center", price: "₱39", emoji: "🍫" },
-  { name: "Choco Snow Pop", desc: "Chocolate-coated cake pop with white chocolate drizzle", price: "₱39", emoji: "❤️" },
-  { name: "Choco Delight", desc: "Moist chocolate cake, frosting and toppings", price: "₱59", emoji: "⚫" },
+  { name: "Choco Confetti Pop", desc: "Chocolate-coated cake pop with marshmallow center", price: "₱39", emoji: "🍫", image: "/images/gallery/Choco Confetti Pop.jpeg" },
+  { name: "Choco Snow Pop", desc: "Chocolate-coated cake pop with white chocolate drizzle", price: "₱39", emoji: "❤️", image: "/images/gallery/Choco Snow Pop.jpeg" },
+  { name: "Choco Delight", desc: "Moist chocolate cake, frosting and toppings", price: "₱59", emoji: "⚫", image: "/images/gallery/Choco Delight.jpg" },
   { name: "Cream & Crunch", desc: "Cookie base, white chocolate sauce and oreo", price: "₱89", emoji: "🍪" },
 ]
 
 export const MENU_CATEGORIES = ["All", "Cake Pops", "Push Pop Cakes", "Sweet Cups"] as const
 
 export const MENU_ITEMS: MenuItem[] = [
-  { name: "Choco Confetti Pop", desc: "Chocolate-coated cake pop with marshmallow center", price: "₱39", category: "Cake Pops" },
-  { name: "Choco Snow Pop", desc: "Chocolate-coated cake pop with white chocolate drizzle", price: "₱39", category: "Cake Pops" },
-  { name: "Vanilla Confetti Pop", desc: "Vanilla cake base, white chocolate and springkles", price: "₱39", category: "Cake Pops" },
-  { name: "Vanilla Eclipse Pop", desc: "Vanilla cake base with dark chocolate drizzle", price: "₱39", category: "Cake Pops" },
-  { name: "Choco Delight", desc: "Moist chocolate cake, frosting and toppings", price: "₱59", category: "Push Pop Cakes" },
-  { name: "Velvet Delight", desc: "Red velvet cake with cream cheese vanilla frosting", price: "₱59", category: "Push Pop Cakes" },
-  { name: "Choco Indulge", desc: "Brownie bites, milk chocolate sauce and oreo", price: "₱89", category: "Sweet Cups" },
-  { name: "Biscoff Crunch", desc: "Cookies, caramel fudge, chocolate chips and biscoff", price: "₱89", category: "Sweet Cups" },
-  { name: "Cream & Crunch", desc: "Cookie base, white chocolate sauce and oreo", price: "₱89", category: "Sweet Cups" },
+  { name: "Choco Confetti Pop", desc: "Chocolate-coated cake pop with marshmallow center", price: "₱39", category: "Cake Pops", image: "/images/gallery/Choco Confetti Pop.jpeg" },
+  { name: "Choco Snow Pop", desc: "Chocolate-coated cake pop with white chocolate drizzle", price: "₱39", category: "Cake Pops", image: "/images/gallery/Choco Snow Pop.jpeg" },
+  { name: "Vanilla Confetti Pop", desc: "Vanilla cake base, white chocolate and springkles", price: "₱39", category: "Cake Pops", image: "/images/gallery/Vanilla Confetti Pop.jpeg" },
+  { name: "Vanilla Eclipse Pop", desc: "Vanilla cake base with dark chocolate drizzle", price: "₱39", category: "Cake Pops", image: "/images/gallery/Vanilla Eclipse Pop.jpeg" },
+  { name: "Choco Delight", desc: "Moist chocolate cake, frosting and toppings", price: "₱59", category: "Push Pop Cakes", image: "/images/gallery/Choco Delight.jpg" },
+  { name: "Velvet Delight", desc: "Red velvet cake with cream cheese vanilla frosting", price: "₱59", category: "Push Pop Cakes", image: "/images/gallery/Velvet Delight.jpg" },
+  { name: "Choco Indulge", desc: "Brownie bites, milk chocolate sauce and oreo", price: "₱89", category: "Sweet Cups", image: "/images/gallery/Choco Indulge.jpeg" },
+  { name: "Biscoff Crunch", desc: "Cookies, caramel fudge, chocolate chips and biscoff", price: "₱89", category: "Sweet Cups", image: "/images/gallery/Biscoff Crunch.jpeg" },
+  { name: "Cream & Crunch", desc: "Cookie base, white chocolate sauce and oreo", price: "₱89", category: "Sweet Cups", image: "/images/gallery/Cream & Crunch.jpeg" },
 ]
 
 

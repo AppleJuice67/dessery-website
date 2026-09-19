@@ -47,11 +47,19 @@ export default function MenuSection() {
               key={item.name}
               className="card-lift bg-[#fff8f0] rounded-2xl overflow-hidden border border-pink-100 flex flex-col"
             >
-              <PhotoSlot
-                className="w-full h-48 rounded-none border-0 rounded-t-2xl"
-                label={`${item.name} — replace with your photo`}
-                emoji="🍡"
-              />
+              {item.image ? (
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  className="w-full h-48 object-cover rounded-t-2xl"
+                />
+              ) : (
+                <PhotoSlot
+                  className="w-full h-48 rounded-none border-0 rounded-t-2xl"
+                  label={`${item.name} — replace with your photo`}
+                  emoji="🍡"
+                />
+              )}
               <div className="p-5 flex flex-col flex-1">
                 <div className="flex items-start justify-between gap-2 mb-1">
                   <p className="font-black text-[#3d1810] text-sm">{item.name}</p>
