@@ -1,6 +1,7 @@
 import { useState } from "react"
 import PhotoSlot from "../common/PhotoSlot"
 import { MENU_ITEMS, MENU_CATEGORIES } from "../../data/siteData"
+import { getImageUrl } from "../../utils/imageUtils"
 
 export default function MenuSection() {
   const [activeCategory, setActiveCategory] = useState<string>("All")
@@ -49,7 +50,7 @@ export default function MenuSection() {
             >
               {item.image ? (
                 <img
-                  src={item.image}
+                  src={getImageUrl(item.image)}
                   alt={item.name}
                   className="w-full h-48 object-cover rounded-t-2xl"
                 />

@@ -1,4 +1,5 @@
 import type { UPhotoProps } from "../../types"
+import { getImageUrl } from "../../utils/imageUtils"
 
 export default function UPhoto({
   id,
@@ -8,8 +9,9 @@ export default function UPhoto({
   alt,
   className = "",
 }: UPhotoProps) {
-  const imageSrc =
+  const rawSrc =
     src || (id ? `https://images.unsplash.com/${id}?w=${w}&h=${h}&fit=crop&auto=format` : "")
+  const imageSrc = getImageUrl(rawSrc)
 
   return (
     <img

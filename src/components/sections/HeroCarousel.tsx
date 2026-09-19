@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from "react"
 import { SLIDES, SLIDE_DURATION } from "../../data/siteData"
+import { getImageUrl } from "../../utils/imageUtils"
 
 export default function HeroCarousel() {
   const [current, setCurrent] = useState(0)
@@ -59,7 +60,7 @@ export default function HeroCarousel() {
             {slide.src ? (
               <div className="w-full h-full bg-pink-50/60 flex items-center justify-center p-2">
                 <img
-                  src={slide.src}
+                  src={getImageUrl(slide.src)}
                   alt={slide.label || `Slide ${i + 1}`}
                   className={`w-full h-full object-contain ${
                     i === current ? "carousel-slide-active" : ""

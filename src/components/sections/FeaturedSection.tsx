@@ -1,5 +1,6 @@
 import PhotoSlot from "../common/PhotoSlot"
 import { BEST_SELLERS } from "../../data/siteData"
+import { getImageUrl } from "../../utils/imageUtils"
 
 export default function FeaturedSection() {
   return (
@@ -25,7 +26,7 @@ export default function FeaturedSection() {
             >
               {item.image ? (
                 <img
-                  src={item.image}
+                  src={getImageUrl(item.image)}
                   alt={item.name}
                   className="w-full h-40 object-cover rounded-t-2xl"
                 />
