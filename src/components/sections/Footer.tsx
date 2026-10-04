@@ -55,7 +55,7 @@ export default function Footer() {
           <div>
             <p className="font-black text-white text-sm uppercase tracking-wider mb-4">Contact</p>
             <ul className="space-y-3 text-white/60 text-sm">
-              <li>📞 +63 XXX XXX XXXX</li>
+              <li>📞 +63 9544092577</li>
               <li>📧 dessery.official@gmail.com</li>
               <li>📍 049 Matagbak II, Alfonso, Cavite, Philippines</li>
               <li>⏰ Daily 9AM – 6PM</li>
