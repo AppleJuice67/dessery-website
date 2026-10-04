@@ -77,7 +77,7 @@ export const SERVICES: ServiceItem[] = [
 
 export const CONTACT_INFO: ContactInfoItem[] = [
   { icon: "📞", label: "Phone / WhatsApp", value: "+63 9544092577", sub: "Mon–Sat, 9AM–6PM" },
-  { icon: "📧", label: "Email", value: "[EMAIL_ADDRESS]", sub: "We reply within 24 hours" },
+  { icon: "📧", label: "Email", value: "dessery.official@gmail.com", sub: "We reply within 24 hours" },
   { icon: "📍", label: "Address", value: "049 Matagbak II", sub: "Alfonso, Cavite, Philippines" },
   { icon: "⏰", label: "Hours", value: "Open Daily 9AM – 6PM", sub: "Closed on major holidays" },
 ]

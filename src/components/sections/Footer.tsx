@@ -56,8 +56,8 @@ export default function Footer() {
             <p className="font-black text-white text-sm uppercase tracking-wider mb-4">Contact</p>
             <ul className="space-y-3 text-white/60 text-sm">
               <li>📞 +63 XXX XXX XXXX</li>
-              <li>📧 hello@dessery.ph</li>
-              <li>📍 Your Address Here</li>
+              <li>📧 dessery.official@gmail.com</li>
+              <li>📍 049 Matagbak II, Alfonso, Cavite, Philippines</li>
               <li>⏰ Daily 9AM – 6PM</li>
             </ul>
             <div className="flex gap-2 mt-5">
@@ -75,7 +75,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-white/40 text-xs font-medium">
-          <p>&copy; 2024 Dessery — Dessert Gallery. All rights reserved.</p>
+          <p>&copy; 2026 Dessery — Dessert Gallery. All rights reserved.</p>
           <p className="flex items-center gap-1">
             Made with <span className="text-pink-400 heart-pulse">♥</span> for sweet lovers everywhere
           </p>
